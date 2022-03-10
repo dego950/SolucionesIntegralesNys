@@ -47,6 +47,8 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
+import { MontajesComponent } from './views/montajes/montajes.component';
+import { SistemasCalidadComponent } from './views/sistemas-calidad/sistemas-calidad.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +86,8 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     IndexComponent,
     LandingComponent,
     ProfileComponent,
+    MontajesComponent,
+    SistemasCalidadComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
