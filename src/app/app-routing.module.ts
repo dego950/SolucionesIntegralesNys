@@ -21,6 +21,10 @@ import { LandingComponent } from './views/landing/landing.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import {MontajesComponent} from './views/montajes/montajes.component';
 import {SistemasCalidadComponent} from './views/sistemas-calidad/sistemas-calidad.component';
+import {ControlAseguramientoComponent} from './views/control-aseguramiento/control-aseguramiento.component';
+import {SoporteTecnicoComponent} from './views/soporte-tecnico/soporte-tecnico.component';
+import {PruebasComponent} from './views/pruebas/pruebas.component';
+import {AlquilerComponent} from './views/alquiler/alquiler.component';
 
 const routes: Routes = [
   // admin views
@@ -45,9 +49,18 @@ const routes: Routes = [
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ],
   },
+  {
+    path: 'servicios',
+    children:[
+      { path: 'montajes', component: MontajesComponent },
+      { path: 'sistemas-calidad', component: SistemasCalidadComponent },
+      { path: 'control-aseguramiento', component: ControlAseguramientoComponent },
+      { path: 'soporte-tecnico', component: SoporteTecnicoComponent },
+      { path: 'pruebas', component: PruebasComponent },
+      { path: 'alquiler', component: AlquilerComponent },
+    ],
+  },
   // no layout views
-  { path: 'sistemas-calidad', component: SistemasCalidadComponent },
-  { path: 'montajes', component: MontajesComponent },
   { path: 'profile', component: ProfileComponent },
   { path: '', component: LandingComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
