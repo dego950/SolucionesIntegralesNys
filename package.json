@@ -1,8 +1,8 @@
 {
-  "name": "notus-angular",
+  "name": "nyssolucionesintegrales",
   "version": "1.1.0",
-  "description": "Notus Angular - Free Tailwind CSS UI Kit and Admin by Creative Tim.",
-  "repository": "https://github.com/creativetimofficial/notus-angular",
+  "description": "soluciones integrales",
+  "repository": "",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -28,12 +28,12 @@
     "@tailwindcss/forms": "0.2.1",
     "chart.js": "2.9.4",
     "rxjs": "6.6.6",
-    "tailwindcss": "2.0.4",
+    "tailwindcss": "^2.2.19",
     "tslib": "2.1.0",
     "zone.js": "0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.1102.4",
+    "@angular-devkit/build-angular": "^0.1102.19",
     "@angular/cli": "11.2.4",
     "@angular/compiler-cli": "11.2.5",
     "@angular/language-service": "11.2.5",
@@ -43,7 +43,7 @@
     "codelyzer": "6.0.1",
     "jasmine-core": "3.6.0",
     "jasmine-spec-reporter": "6.0.0",
-    "karma": "6.2.0",
+    "karma": "^6.3.17",
     "karma-chrome-launcher": "3.1.0",
     "karma-coverage-istanbul-reporter": "3.0.3",
     "karma-jasmine": "4.0.1",
