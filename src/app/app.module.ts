@@ -54,6 +54,12 @@ import { ControlAseguramientoComponent } from './views/control-aseguramiento/con
 import { SoporteTecnicoComponent } from './views/soporte-tecnico/soporte-tecnico.component';
 import { PruebasComponent } from './views/pruebas/pruebas.component';
 import { AlquilerComponent } from './views/alquiler/alquiler.component';
+import { provideFirebaseApp } from '@angular/fire/app';
+import firebase from "firebase/compat";
+import initializeApp = firebase.initializeApp;
+import {environment} from "../environments/environment";
+import {getAuth, provideAuth} from "@angular/fire/auth";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -99,7 +105,7 @@ import { AlquilerComponent } from './views/alquiler/alquiler.component';
     PruebasComponent,
     AlquilerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, provideFirebaseApp(() => initializeApp(environment.firebaseConfig)), provideAuth(() => getAuth()), ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

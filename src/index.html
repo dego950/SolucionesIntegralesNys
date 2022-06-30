@@ -9,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body class="text-blueGray-700 antialiased">
     <app-root></app-root>
@@ -43,5 +47,19 @@
       js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
   </script>
 </html>

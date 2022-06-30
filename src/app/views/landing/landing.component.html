@@ -1,59 +1,48 @@
-<app-auth-navbar></app-auth-navbar>
+<app-index-navbar></app-index-navbar>
 <main>
-  <div
-    class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
-  >
-    <div
-      class="absolute top-0 w-full h-full bg-center bg-cover"
-      style="
-        background-image: url('assets/img/banner.jpeg');
-      "
-    >
-      <span
-        id="blackOverlay"
-        class="w-full h-full absolute opacity-75 bg-black"
-      ></span>
-    </div>
-    <div class="container relative mx-auto">
-      <div class="items-center flex flex-wrap">
-        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-          <div class="pr-12">
-            <img class="justify-center" height="383" width="561" src="assets/img/logo.png">
-            <h1 class="text-white font-semibold text-5xl">
-              N&S Soluciones Integrales
-            </h1>
-            <p class="mt-4 text-lg text-blueGray-200">
-              NOS CARACTERIZAMOS EN SERVIR
-              A LA COMUNIDAD PARA REALIZAR
-              OBRAS DE CALIDAD,
-              IMPLEMENTADO MEJORA CONTINUA
-              EN SUS PROCESOS.
-            </p>
-          </div>
-        </div>
+  <div id="carouselExampleControls" class="carousel slide relative" data-bs-ride="carousel">
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="assets/img/ba1.png"
+          class="block w-full"
+          alt="Wild Landscape"
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="assets/img/ba2.png"
+          class="block w-full"
+          alt="Camera"
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="assets/img/ba3.png"
+          class="block w-full"
+          alt="Exotic Fruits"
+        />
       </div>
     </div>
-    <div
-      class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-      style="transform: translateZ(0)"
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
     >
-      <svg
-        class="absolute bottom-0 overflow-hidden"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        version="1.1"
-        viewBox="0 0 2560 100"
-        x="0"
-        y="0"
-      >
-        <polygon
-          class="text-blueGray-200 fill-current"
-          points="2560 0 2560 100 0 100"
-        ></polygon>
-      </svg>
-    </div>
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-
   <section class="pb-20 bg-blueGray-200 -mt-24">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap">
@@ -213,7 +202,6 @@
       </div>
     </div>
   </section>
-
   <section class="relative py-20">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
@@ -237,12 +225,7 @@
 
     <div class="container mx-auto px-4">
       <div class="items-center flex flex-wrap">
-        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <img
-            alt="..."
-            class="max-w-full rounded-lg shadow-lg"
-            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-          />
+        <div id="map_mapbox" class="w-full md:w-4/12 ml-auto mr-auto px-4">
         </div>
         <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div class="md:pr-12">
@@ -251,11 +234,10 @@
             >
               <i class="fas fa-rocket text-xl"></i>
             </div>
-            <h3 class="text-3xl font-semibold">A growing company</h3>
+            <h3 class="text-3xl font-semibold">Una empresa en crecimiento</h3>
             <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-              The extension comes with three pre-built pages to help you get
-              started faster. You can change the text and images and you're good
-              to go.
+              En nuestras instalaciones podras encontrar un servicio con calidad,
+              con los mejores profesionales que estaran presentes para responder todas las nesecidades de nuestros clientes.
             </p>
             <ul class="list-none mt-6">
               <li class="py-2">
@@ -308,164 +290,6 @@
       </div>
     </div>
   </section>
-
-  <section class="pt-20 pb-48">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-wrap justify-center text-center mb-24">
-        <div class="w-full lg:w-6/12 px-4">
-          <h2 class="text-4xl font-semibold">Here are our heroes</h2>
-          <p class="text-lg leading-relaxed m-4 text-blueGray-500">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap">
-        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-          <div class="px-6">
-            <img
-              alt="..."
-              src="assets/img/team-1-800x800.jpg"
-              class="shadow-lg rounded-full mx-auto max-w-120-px"
-            />
-            <div class="pt-6 text-center">
-              <h5 class="text-xl font-bold">Ryan Tompson</h5>
-              <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                Web Developer
-              </p>
-              <div class="mt-6">
-                <button
-                  class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-twitter"></i>
-                </button>
-                <button
-                  class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </button>
-                <button
-                  class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-dribbble"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-          <div class="px-6">
-            <img
-              alt="..."
-              src="assets/img/team-2-800x800.jpg"
-              class="shadow-lg rounded-full mx-auto max-w-120-px"
-            />
-            <div class="pt-6 text-center">
-              <h5 class="text-xl font-bold">Romina Hadid</h5>
-              <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                Marketing Specialist
-              </p>
-              <div class="mt-6">
-                <button
-                  class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-google"></i>
-                </button>
-                <button
-                  class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-          <div class="px-6">
-            <img
-              alt="..."
-              src="assets/img/team-3-800x800.jpg"
-              class="shadow-lg rounded-full mx-auto max-w-120-px"
-            />
-            <div class="pt-6 text-center">
-              <h5 class="text-xl font-bold">Alexa Smith</h5>
-              <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                UI/UX Designer
-              </p>
-              <div class="mt-6">
-                <button
-                  class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-google"></i>
-                </button>
-                <button
-                  class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-twitter"></i>
-                </button>
-                <button
-                  class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-instagram"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-          <div class="px-6">
-            <img
-              alt="..."
-              src="assets/img/team-4-470x470.png"
-              class="shadow-lg rounded-full mx-auto max-w-120-px"
-            />
-            <div class="pt-6 text-center">
-              <h5 class="text-xl font-bold">Jenna Kardi</h5>
-              <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                Founder and CEO
-              </p>
-              <div class="mt-6">
-                <button
-                  class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-dribbble"></i>
-                </button>
-                <button
-                  class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-google"></i>
-                </button>
-                <button
-                  class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-twitter"></i>
-                </button>
-                <button
-                  class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-instagram"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="pb-20 relative block bg-blueGray-800">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
@@ -488,16 +312,6 @@
     </div>
 
     <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-      <div class="flex flex-wrap text-center justify-center">
-        <div class="w-full lg:w-6/12 px-4">
-          <h2 class="text-4xl font-semibold text-white">Build something</h2>
-          <p class="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
-          </p>
-        </div>
-      </div>
       <div class="flex flex-wrap mt-12 justify-center">
         <div class="w-full lg:w-3/12 px-4 text-center">
           <div
@@ -550,16 +364,16 @@
             class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200"
           >
             <div class="flex-auto p-5 lg:p-10">
-              <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+              <h4 class="text-2xl font-semibold">¿Quieres trabajar con nosotros?</h4>
               <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
-                Complete this form and we will get back to you in 24 hours.
+                Complete este formulario y nos pondremos en contacto con usted en 24 horas.
               </p>
               <div class="relative w-full mb-3 mt-8">
                 <label
                   class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                   htmlFor="full-name"
                 >
-                  Full Name
+                  Nombre Completo
                 </label>
                 <input
                   type="text"
@@ -587,7 +401,7 @@
                   class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                   htmlFor="message"
                 >
-                  Message
+                  Mensaje
                 </label>
                 <textarea
                   rows="4"
@@ -601,7 +415,7 @@
                   class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                   type="button"
                 >
-                  Send Message
+                  Enviar mensaje
                 </button>
               </div>
             </div>
